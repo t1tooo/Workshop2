@@ -3,6 +3,12 @@ async function start() {
   // Read JSON files for player, map and locations
   // Note: No "var" before player, map and locations
   // because they are global variables
+
+  // specifically for playwright webkit flakyness
+  // (hard to write if blackbox testing - sneak peak on code neeeded
+  //  or discussion with developer)
+  if (!window.jsonLoader) { setTimeout(start, 1); return; }
+
   player = await jsonLoader("player.json");
   map = await jsonLoader("map.json");
   locations = {};

@@ -1,6 +1,6 @@
 {
   "image": "music-scene",
-  "description": "A guitarist and sax player make som funky noise.<br>The guitarist doesn't sing too well though.",
+  "description": "A guitarist and sax player make some funky noise.<br>The guitarist doesn't sing too well though.",
   "choices": {
     "Jam with the band": {
       "if has happened": "offered to jam",
